@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "gatsby-starter-mszd",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "Gatsby Starter Repo for Maria Szubski Digital, LLC",
+  "version": "1.0.0",
+  "author": "Maria Szubski <hello@mariaszubski.com>",
   "dependencies": {
     "gatsby": "^2.24.50",
     "gatsby-image": "^2.4.16",
@@ -36,9 +36,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/mariaszubski/gatsby-starter-mszd"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/mariaszubski/gatsby-starter-mszd/issues"
   }
 }

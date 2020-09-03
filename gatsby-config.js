@@ -1,11 +1,25 @@
 module.exports = {
   siteMetadata: {
     title: `Maria Szubski Digital's Gatsby Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: ``,
+    author: `Maria Szubski <hello@mariaszubski.com>`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    'gatsby-plugin-offline',
+    `gatsby-plugin-remove-trailing-slashes`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-catch-links`,
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        commonmark: true,
+        plugins: [],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -13,22 +27,69 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    // {
-    //   resolve: `gatsby-plugin-manifest`,
-    //   options: {
-    //     name: `gatsby-starter-default`,
-    //     short_name: `starter`,
-    //     start_url: `/`,
-    //     background_color: `#663399`,
-    //     theme_color: `#663399`,
-    //     display: `minimal-ui`,
-    //     icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
-    //   },
-    // },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID,
+        head: true,
+        anonymize: true,
+        respectDNT: true,
+        pageTransitionDelay: 0,
+        defer: true,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        env: {
+          production: {
+            policy: [
+              { userAgent: "*" },
+            ],
+          },
+          "branch-deploy": {
+            policy: [{ userAgent: "*", disallow: ["/"] }],
+            sitemap: null,
+            host: null,
+          },
+          "deploy-preview": {
+            policy: [{ userAgent: "*", disallow: ["/"] }],
+            sitemap: null,
+            host: null,
+          },
+        },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `gatsby-starter-mszd`,
+        short_name: `MSD's Gatsby Starter`,
+        start_url: `/`,
+        background_color: `#1D2226`,
+        theme_color: `#161528`,
+        display: `minimal-ui`,
+        //icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          // google: [
+          //   {
+          //     family: "Nunito",
+          //     variants: ["300", "400", "600", "700", "800"],
+          //     ontDisplay: 'swap',
+          //     strategy: 'selfHosted' // 'base64' || 'cdn'
+          //   },
+          // ],
+        },
+        useMinify: true,
+        usePreload: true,
+        usePreconnect: true,
+        //formats: ['woff2', 'woff'],
+      },
+    },
   ],
 }

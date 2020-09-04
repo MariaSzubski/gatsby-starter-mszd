@@ -8,7 +8,8 @@ const Layout = ({ children, ...props }) => (
   <>
     <SEO title={props.title} />
     <GlobalStyles />
-    <div id="site">
+    <div id="site-wrapper">
+      <header><nav>nav / header</nav></header>
       <main>{children}</main>
       <footer className="text-xs text-center">
         © {new Date().getFullYear()} Maria Szubski Digital, LLC

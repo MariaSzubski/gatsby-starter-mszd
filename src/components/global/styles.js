@@ -6,6 +6,7 @@ import normalize from "./ref/normalize"
 const global_styles = css`
   html {
     font-size: 62.5%;
+    line-height: 1.45;
     box-sizing: border-box;
     color: ${colors.black};
     font-family: ${fonts.nunito};
@@ -22,8 +23,14 @@ const global_styles = css`
   }
 
   body {
-    font-size: 21px;
-    font-size: 2.1rem;
+    font-size: 2px;
+    font-size: 2rem;
+  }
+
+  #site-wrapper {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: [header] min-content [main] auto [footer] min-content;
   }
 
   a {
@@ -80,8 +87,7 @@ const global_styles = css`
     text-align: center;
   }
 
-  h6,
-  .h6 {
+  h6 {
     font-size: 1.3rem;
   }
 
@@ -97,16 +103,20 @@ const global_styles = css`
   }
 
   *.space-lg {
-    margin: 12rem 0rem;
+    margin-top: 12rem;
+    margin-bottom: 12rem;
     :first-of-type {
-      margin: 6rem 0rem;
+      margin-top: 6rem;
+      margin-bottom: 6rem;
     }
   }
 
   *.space-sm {
-    margin: 4rem 0rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     :first-of-type {
-      margin: 2rem 0rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
     }
   }
 
@@ -122,14 +132,14 @@ const global_styles = css`
 
   *.text-md,
   *.text-md * {
-    font-size: 2.1rem;
+    font-size: 2rem;
   }
 
   .highlighted p:first-of-type,
   *.text-lg,
   .highlighted p:first-of-type,
   *.text-lg * {
-    font-size: 3rem;
+    font-size: 2.9rem;
   }
 
   *.text-light,
@@ -143,7 +153,9 @@ const global_styles = css`
   }
 
   @media ${screen.max.md} {
-    body {
+    body,
+    .text-md,
+    .text-sm {
       font-size: 1.6rem;
     }
 

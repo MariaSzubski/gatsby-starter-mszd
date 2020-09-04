@@ -1,8 +1,15 @@
-import { Container }  from "./container"
-import { Row } from "./row"
+// CSS Flex
+import { Container } from "./container"
+import { Flex } from "./flex"
 import { Col } from "./col"
-import { Show, Hide } from "./query"
 
-export { Container, Row, Col, Show, Hide }
+// CSS Grid
+import { Grid } from "./grid"
 
-export default Container
+// Queries
+// import { Show, Hide } from "./query"
+
+// export { Container, Row, Col, Show, Hide }
+export { Container, Flex, Col, Grid }
+
+export default Grid

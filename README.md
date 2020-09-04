@@ -75,7 +75,8 @@ $ gatsby build && gatsby serve -o
     grid-system
       ├── col
       ├── container
-      └── row
+      ├── flex
+      └── grid
     layout
       ├── layout
       └── seo

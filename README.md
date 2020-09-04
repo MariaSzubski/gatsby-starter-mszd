@@ -37,6 +37,32 @@ A quick look at the top-level files and directories you'll see in this project
     └── yarn.lock
 
 
+## Plugins & Dependencies
+
+    gatsby-image
+    gatsby-plugin-manifest
+    gatsby-plugin-offline
+    gatsby-plugin-react-helmet
+    gatsby-plugin-robots-txt
+    gatsby-plugin-sharp
+    gatsby-plugin-sitemap
+    gatsby-source-filesystem
+    gatsby-transformer-remark
+    gatsby-transformer-sharp
+
+    gatsby-plugin-catch-links
+    gatsby-plugin-google-analytics
+    gatsby-plugin-remove-trailing-slashes
+    gatsby-plugin-styled-components
+    gatsby-plugin-webfonts
+
+    react-inlinesvg
+    react-responsive
+    styled-components
+    @storybook
+    prettier
+
+
 ## Setup & Run
 
 This project uses `yarn` to manage packages.

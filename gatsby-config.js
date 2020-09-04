@@ -76,14 +76,14 @@ module.exports = {
       resolve: `gatsby-plugin-webfonts`,
       options: {
         fonts: {
-          // google: [
-          //   {
-          //     family: "Nunito",
-          //     variants: ["300", "400", "600", "700", "800"],
-          //     ontDisplay: 'swap',
-          //     strategy: 'selfHosted' // 'base64' || 'cdn'
-          //   },
-          // ],
+          google: [
+            {
+              family: "Nunito",
+              variants: ["300", "400", "600", "700"],
+              // fontDisplay: 'swap',
+              // strategy: 'selfHosted' // 'base64' || 'cdn'
+            },
+          ],
         },
         useMinify: true,
         usePreload: true,

@@ -15,7 +15,7 @@ Boilerplate for GatsbyJS Projects.
 `master` `contentful-cms`
 
 ```bash
-#clone a specific branch
+# clone a specific branch
 $ git clone -b contentful-cms --single-branch https://github.com/MariaSzubski/gatsby-starter-mszd.git
 ```
 
@@ -75,7 +75,8 @@ $ gatsby build && gatsby serve -o
     grid-system
       ├── col
       ├── container
-      └── row
+      ├── flex
+      └── grid
     layout
       ├── layout
       └── seo

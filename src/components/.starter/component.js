@@ -2,19 +2,18 @@ import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 
-import * as g from "../global/vars"
+import { colors, screen } from "../global/vars"
 
-const /*Component*/ = props => (
+const Component = props => (
 
 )
 
-/*Component*/.propTypes = {
-  /** prop description here */
-  propName: PropTypes.string.isRequied,
-}
-
-/*Component*/.defaultProps = {
+Component.propTypes = {
 
 }
 
-export default /*Component*/
+Component.defaultProps = {
+
+}
+
+export default Component

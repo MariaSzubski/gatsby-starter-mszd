@@ -6,9 +6,8 @@ export default {
   title: "Title",
 }
 
-export const Basic = (args) => {
+export const Basic = args => {
   return <Component {...args} />
 }
 
-
-Basic.args = { backgroundColor: 'pink' };
+Basic.args = {}

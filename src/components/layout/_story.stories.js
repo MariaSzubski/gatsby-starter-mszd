@@ -6,9 +6,9 @@ export default {
   title: "Title",
 }
 
-export const Basic = args => {
+export const Basic = (args) => {
   return <Component {...args} />
 }
 
-// propName: 'defaultVal'
-Basic.args = {}
+
+Basic.args = {  };

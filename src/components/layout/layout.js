@@ -5,8 +5,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "../header"
 import SEO from "./seo"
 
-// import { colors, screen } from "../global/vars"
-
 const Layout = ({ children, ...props }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {

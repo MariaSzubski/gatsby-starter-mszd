@@ -5,7 +5,6 @@
   "version": "1.0.0",
   "author": "Maria Szubski <hello@mariaszubski.com>",
   "dependencies": {
-    "@storybook/addon-controls": "^6.0.21",
     "babel-plugin-styled-components": "^1.11.1",
     "gatsby": "^2.24.50",
     "gatsby-image": "^2.4.16",
@@ -34,6 +33,7 @@
     "@babel/core": "^7.11.6",
     "@storybook/addon-a11y": "^6.0.21",
     "@storybook/addon-actions": "^6.0.21",
+    "@storybook/addon-controls": "^6.0.21",
     "@storybook/addon-essentials": "^6.0.21",
     "@storybook/addon-links": "^6.0.21",
     "@storybook/addon-viewport": "^6.0.21",

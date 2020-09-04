@@ -10,21 +10,43 @@
 
 Boilerplate for GatsbyJS Projects.
 
+## Setup & Run
+
+This project uses `yarn` to manage packages.
+
+```bash
+# install dependencies
+$ yarn install
+
+# run development server
+$ gatsby develop -o
+
+# run development server on LAN
+$ gatsby developer -H 0.0.0.0
+
+# run storybook
+$ yarn storybook
+
+# build for production and launch local production server
+$ gatsby build && gatsby serve -o
+```
+
+
 ## What's inside?
 
-A quick look at the top-level files and directories you'll see in this project
+#### Top-Level Directories
 
     .
     ├── node_modules
     ├── src
         ├── assets
-        ├── components
+        └── components
             ├── component (see `.starter` template)
                 ├── _story.stories.jsx
                 ├── component.js
-                ├── index.js (exports main component)
+                └── index.js
         ├── pages
-        ├── templates
+        └── templates
     ├── .gitignore
     ├── .prettierrc
     ├── gatsby-browser.js
@@ -36,8 +58,26 @@ A quick look at the top-level files and directories you'll see in this project
     ├── README.md
     └── yarn.lock
 
+#### Default Components
 
-## Plugins & Dependencies
+
+    global
+      ├── ref
+      ├── styles.js
+      └── vars.js
+    grid-system
+      ├── col
+      ├── container
+      └── row
+    layout
+      ├── layout
+      └── seo
+    react-icons
+    utilities
+      ├── html
+      └── link
+
+#### Default Dependencies
 
     gatsby-image
     gatsby-plugin-manifest
@@ -61,25 +101,3 @@ A quick look at the top-level files and directories you'll see in this project
     styled-components
     @storybook
     prettier
-
-
-## Setup & Run
-
-This project uses `yarn` to manage packages.
-
-```bash
-# install dependencies
-$ yarn install
-
-# run development server
-$ gatsby develop -o
-
-# run development server on LAN
-$ gatsby developer -H 0.0.0.0
-
-# run storybook
-$ yarn storybook
-
-# build for production and launch local production server
-$ gatsby build && gatsby serve -o
-```

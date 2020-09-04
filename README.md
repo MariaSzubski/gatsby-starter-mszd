@@ -10,6 +10,15 @@
 
 Boilerplate for GatsbyJS Projects.
 
+#### Branches
+
+`master` `contentful-cms`
+
+```bash
+#clone a specific branch
+$ git clone -b contentful-cms --single-branch https://github.com/MariaSzubski/gatsby-starter-mszd.git
+```
+
 ## Setup & Run
 
 This project uses `yarn` to manage packages.
@@ -30,7 +39,6 @@ $ yarn storybook
 # build for production and launch local production server
 $ gatsby build && gatsby serve -o
 ```
-
 
 ## What's inside?
 
@@ -59,7 +67,6 @@ $ gatsby build && gatsby serve -o
     └── yarn.lock
 
 #### Default Components
-
 
     global
       ├── ref

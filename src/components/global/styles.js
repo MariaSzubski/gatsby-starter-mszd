@@ -7,12 +7,12 @@ const global_styles = css`
   html {
     font-size: 62.5%;
     box-sizing: border-box;
-    color: white;
+    color: ${colors.black};
     font-family: ${fonts.nunito};
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     -moz-osx-font-smoothing: grayscale;
-    background: black;
+    background: white;
   }
 
   *,
@@ -93,7 +93,7 @@ const global_styles = css`
   .background {
     background-color: black;
     color: white;
-    box-shadow: 0px 0.4rem 1rem rgba(0,0,20,.2);
+    box-shadow: 0px 0.4rem 1rem rgba(0, 0, 20, 0.2);
   }
 
   *.space-lg {

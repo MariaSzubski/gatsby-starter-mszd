@@ -12,11 +12,19 @@ Boilerplate for GatsbyJS Projects.
 
 ## What's inside?
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+A quick look at the top-level files and directories you'll see in this project
 
     .
     ├── node_modules
     ├── src
+        ├── assets
+        ├── components
+            ├── component (see `.starter` template)
+                ├── _story.stories.jsx
+                ├── component.js
+                ├── index.js (exports main component)
+        ├── pages
+        ├── templates
     ├── .gitignore
     ├── .prettierrc
     ├── gatsby-browser.js
@@ -24,11 +32,14 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
     ├── gatsby-node.js
     ├── gatsby-ssr.js
     ├── LICENSE
-    ├── package-lock.json
     ├── package.json
-    └── README.md
+    ├── README.md
+    └── yarn.lock
 
-## Setup
+
+## Setup & Run
+
+This project uses `yarn` to manage packages.
 
 ```bash
 # install dependencies
@@ -40,6 +51,9 @@ $ gatsby develop -o
 # run development server on LAN
 $ gatsby developer -H 0.0.0.0
 
-# build for production and launch local server
+# run storybook
+$ yarn storybook
+
+# build for production and launch local production server
 $ gatsby build && gatsby serve -o
 ```

@@ -10,7 +10,9 @@ const Layout = ({ children, ...props }) => (
     <GlobalStyles />
     <div>
       <main>{children}</main>
-      <footer>© {new Date().getFullYear()} Maria Szubski Digital, LLC</footer>
+      <footer className="text-xs text-center">
+        © {new Date().getFullYear()} Maria Szubski Digital, LLC
+      </footer>
     </div>
   </>
 )

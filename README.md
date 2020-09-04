@@ -72,7 +72,7 @@ $ gatsby build && gatsby serve -o
     layout
       ├── layout
       └── seo
-    react-icons
+    svg-icons
     utilities
       ├── html
       └── link

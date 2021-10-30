@@ -9,7 +9,7 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    'gatsby-plugin-offline',
+    "gatsby-plugin-offline",
     `gatsby-plugin-remove-trailing-slashes`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-catch-links`,
@@ -43,9 +43,7 @@ module.exports = {
       options: {
         env: {
           production: {
-            policy: [
-              { userAgent: "*" },
-            ],
+            policy: [{ userAgent: "*" }],
           },
           "branch-deploy": {
             policy: [{ userAgent: "*", disallow: ["/"] }],
@@ -73,22 +71,11 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-webfonts`,
+      resolve: `gatsby-source-contentful`,
       options: {
-        fonts: {
-          google: [
-            {
-              family: "Nunito",
-              variants: ["300", "400", "600", "700"],
-              // fontDisplay: 'swap',
-              // strategy: 'selfHosted' // 'base64' || 'cdn'
-            },
-          ],
-        },
-        useMinify: true,
-        usePreload: true,
-        usePreconnect: true,
-        //formats: ['woff2', 'woff'],
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_DELIVERY_TOKEN,
+        host: `cdn.contentful.com`,
       },
     },
   ],
